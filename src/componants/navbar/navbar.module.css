@@ -1,0 +1,15 @@
+.NavBar{
+    background-color: red;
+    height: 80px;
+    width: 100vw;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+    
+    list-style: none;
+}
+li{
+    align-items: center;
+}
