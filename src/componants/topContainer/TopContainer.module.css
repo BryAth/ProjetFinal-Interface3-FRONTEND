@@ -1,0 +1,15 @@
+.TopImg{
+    width: 350px;
+    height: 250px;
+}
+
+.TopContainer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.TopParaph {
+    width: 90%;
+    margin: auto;
+    font-size: 1.4rem;
+}

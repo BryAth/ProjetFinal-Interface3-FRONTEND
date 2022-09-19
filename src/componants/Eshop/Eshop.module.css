@@ -1,0 +1,46 @@
+.ShopContainer {
+   
+    display: flex;
+    flex-direction: row;
+    
+}
+.LeftSide {
+    border: 1px solid black;
+    width: 75vw;
+    height: 100vh;
+    
+}
+
+
+.LeftSide ul {
+    display: flex;
+    
+}
+
+.Basket{
+    
+    width: 25vw;
+    height: 100vh;
+    background-color: green;
+    text-align: center;
+
+}
+.PanierTop{
+
+}
+
+.PrixContainer{
+    
+    display: flex;
+    height: 90vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.PrixBottomRight{
+
+}
+
+.Icon{
+    height: 80px;
+    color: pink;
+}

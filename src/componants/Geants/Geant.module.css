@@ -1,0 +1,23 @@
+.Container {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  
+ 
+  }
+
+.Container ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex : 1 1 1500px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Container ul img{
+   
+    margin: auto;
+}

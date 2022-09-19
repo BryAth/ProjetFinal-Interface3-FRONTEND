@@ -1,15 +1,42 @@
 .NavBar{
-    background-color: red;
+    background-color: #831083;
     height: 80px;
     width: 100vw;
-    
-}
-ul{
     display: flex;
-    justify-content: center;
     
-    list-style: none;
+    
 }
-li{
+
+nav ul{
+    display: flex;
+    margin: 0 35px;
+    width: 100vw;
     align-items: center;
+    justify-content: space-between;
+    
+    
 }
+nav li{
+    
+    color :white;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+nav li:hover{
+    background-color: rgb(228, 192, 192);
+    text-decoration: underline 3px yellow;
+    color:black;
+    transition: 3s;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav img{
+    width: 150px;
+    height: 80px;
+}
+

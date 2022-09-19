@@ -1,0 +1,25 @@
+.ContainerError{
+    background-image: url("https://img.freepik.com/vecteurs-libre/oops-erreur-404-illustration-concept-robot-casse_114360-5529.jpg?w=2000");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.ContainerError img{
+    width: 150%;
+    height: 150%;
+}
+
+.Error{
+    background-color: red;
+    margin: auto;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
