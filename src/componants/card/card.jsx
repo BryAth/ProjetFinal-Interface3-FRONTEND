@@ -1,33 +1,40 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Style from './card.module.css'
 
 
 
 
 
-const Card = ({geant}) => {
+const Card = ({ geant }) => {
 
-console.log(geant.nom)
+    console.log(geant)
 
 
     return (
         <div className={Style.container}>
-                <div className={Style.Card}> 
-                    <div className={Style.infos}>
-            <p>{geant.nom} </p>
-                        <div className={Style.der}>
-            <p>{geant.taille} </p>
-            <p>{geant.poids} </p>  
-                        </div>
-            <img src={geant.img} alt="" />. 
+            <div className={Style.Card}>
+                <div className={Style.infos}>
+                    <p>{geant.nom}</p>
+                    <div className={Style.der}>
+                        <p className={Style.Desc}>{geant.description} </p>
+                        
+                        <NavLink to={`/details/${geant._id}`}>
+                            <div className={Style.ButtonButton}>
+                                <button>En savoir + !</button>
+                            </div>
+                        </NavLink>
                     </div>
-            <button>read more</button>
+                    <div className={Style.imgCenter}></div>
+                    <img src={geant.img} alt="" />.
                 </div>
+
             </div>
+        </div>
 
 
-        
-        
+
+
     );
 };
 

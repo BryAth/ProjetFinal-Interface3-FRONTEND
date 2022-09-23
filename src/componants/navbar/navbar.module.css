@@ -3,6 +3,9 @@
     height: 80px;
     width: 100vw;
     display: flex;
+    animation-name: slideNav ;
+    animation-duration : 3s;
+    
     
     
 }
@@ -25,10 +28,8 @@ nav li{
     
 }
 nav li:hover{
-    background-color: rgb(228, 192, 192);
-    text-decoration: underline 3px yellow;
-    color:black;
-    transition: 3s;
+    text-decoration: 3px underline yellow;
+    
 }
 nav a{
     text-decoration: none;
@@ -36,7 +37,19 @@ nav a{
 }
 
 nav img{
+    position:absolute;
+    left:920px;
+    top:1px;
     width: 150px;
     height: 80px;
 }
 
+
+@keyframes slideNav {
+    from{
+        position: absolute;
+        left:15000px;}
+    to{position:absolute;
+        left:0px}
+    
+}

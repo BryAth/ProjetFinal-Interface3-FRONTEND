@@ -1,11 +1,16 @@
 
-.Body {
-    width: 1300px;
-    height:500px;
+.Body{
+    
+    width: 1200px;
+    height: 300px;
     margin: auto;
-  }
+}
 
-  img{
-    width: 1000px;
-    height: 400px;
-  }
+.Body img {
+    width: 1200px;
+    height: 300px;
+}
+
+.Carousel{
+    margin-top: 100px;
+}

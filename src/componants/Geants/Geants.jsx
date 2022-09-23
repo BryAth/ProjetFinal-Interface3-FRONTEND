@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import axios from "axios"
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 import Navbar from "../navbar/navbar";
 import Card from "../card/card";
 import Style from './Geant.module.css'

@@ -7,13 +7,13 @@ import Style from "./Carrousel.module.css"
 
 const Carrousel = () => {
     return (
-        <div>
+        <div className={Style.Carousel}>
             <Carousel className={Style.Body}>
       <Carousel.Item>
         <img
           className="d-block w-100"
           src={photo1}
-          alt="First slide"
+          alt="First slide"q
         />
         <Carousel.Caption>
           <h3>First slide label</h3>

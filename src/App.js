@@ -14,12 +14,13 @@ import Eshop from './componants/Eshop/Eshop';
 import FormCollaboratif from './componants/FormCollaboratif/FormCollaboratif';
 import GallerieCollaborative from './componants/ResultatCollabo/GallerieCollaborative';
 import Carrousel from './componants/Carrousel/Carrousel';
+import Aa from './componants/aa/geantdesc';
 
 function App() {
 
-   
-  return (
 
+return (
+    
     <BrowserRouter>
     <Routes>
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/collaborative' element={<FormCollaboratif />} />
         <Route path='/galerie' element={<GallerieCollaborative />} />
         <Route path="/carrousel" element={<Carrousel />} />
+        <Route path='/details/:id' element={<Aa/>} />
         
 
     </Routes>

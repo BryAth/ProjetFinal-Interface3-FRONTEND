@@ -1,25 +1,32 @@
-.FlexForm
-{
-    background: grey;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.CardForm{
-    width: 500px;
-    height: 200px;
-    background-color: white;
-    display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 3%;
-    text-align: center;
-    
-
-}
-
 .CardForm form {
-    margin: auto;
-    font-size: 1.4rem;
+    width: 80%;
+    margin: 50px auto;
 }
+
+.CardForm label+
+input {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.CardForm label {
+    width: 30%;
+    
+    text-align: right;
+}
+
+.CardForm label+input {
+    width: 30%;
+    
+    margin: 0 30% 0 4%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,37 +1,44 @@
 import React from 'react';
 import Style from './navbar.module.css'
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { logout } from '../../store/actions/auth-actions';
+
 
 
 const Navbar = () => {
+    const isConnected = useSelector(state => state.identification.isConnected)
+    const dispatch = useDispatch()
+
+    const onLogOut = () => {
+        dispatch(logout())
+    }
     return (
         <div>
             <nav className={Style.NavBar}>
                 <ul>
-                    <NavLink to ="/"> 
-                <img src="logo-minisite.png" alt="" />
-                </NavLink>
-                    <NavLink to ="/geants"> 
-                    <li>Les géants</li>
+                    <NavLink to="/geants">
+                        <li>Les géants</li>
                     </NavLink>
-                    <NavLink to="/eshop">
-                    <li>Eshop</li>
-                    </NavLink>
-
                     <NavLink to='/collaborative'>
                         <li>Galerie Collaborative</li>
                     </NavLink>
-                    <NavLink to ="/register"> 
-                    <li>Inscription</li>
+                    <NavLink to="/">
+                        
+                        <img src="http://image.noelshack.com/fichiers/2022/38/2/1663671987-logo-minisite.png" alt="" />
+                        
                     </NavLink>
-                    <NavLink to ="/login"> 
-                    <li>Connexion</li>
-                    </NavLink>
+
+                    {!isConnected && <NavLink to="/register">
+                        <li>Inscription</li>
+                    </NavLink>}
+                    {!isConnected && <NavLink to="/login">
+                        <li>Connexion</li>
+                    </NavLink>}
+                    {isConnected&&<li onClick={onLogOut}>Déconnexion</li>}
                     
-                    <NavLink to ="/contact"> 
-                    <li>Contact</li>
-                    </NavLink>
-                    
+
                 </ul>
             </nav>
         </div>

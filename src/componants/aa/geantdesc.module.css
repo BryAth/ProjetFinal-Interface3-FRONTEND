@@ -1,0 +1,27 @@
+.Container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.CardsGeants {
+    width: 50vw;
+    height: 100vh;
+    
+    font-size: 45px;
+    
+}
+
+.images img{
+    width: 50vw;
+    height: 50vh;
+    background-color: gray;
+    margin-bottom: 25px;
+    
+}
+
+.images{
+    width: 50vw;
+    height: 50vh;
+}

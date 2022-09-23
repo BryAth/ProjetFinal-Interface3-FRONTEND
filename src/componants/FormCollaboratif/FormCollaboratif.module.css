@@ -1,0 +1,36 @@
+
+
+
+.FormContainer {
+
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+
+}
+
+.CardForm{
+    margin: auto;
+    
+    
+    
+}
+
+.CardForm button{
+    margin: 45px auto;
+   
+}
+
+.CardForm .topParah{
+    font-size: 1.2rem;
+    margin-bottom: 140px;
+}
+
+.CardForm .InputForm {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
